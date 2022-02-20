@@ -1,0 +1,326 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+nav {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.backgrouptop {
+    background-image: url('/image/1.png');
+    background-repeat: repeat-x;
+    background-size: 110px;
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+
+nav>header {
+    background-color: rgba(0, 0, 0, 0.534);
+    background-size: 100% 100%;
+    height: 80px;
+    font-family: 'Tahoma';
+    position: relative;
+}
+
+nav .icon {
+    line-height: 20px;
+    font-size: 15px;
+    text-align: right;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+nav .icon a {
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+nav .icon>a:hover,
+nav .icon>i:hover {
+    color: rgba(99, 95, 95, 0.849);
+}
+
+.logo>i {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 40px;
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.logo>i:hover {
+    transform: scale(1.4);
+    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+nav .topmenu {
+    margin: auto;
+    width: 100%;
+    line-height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20%;
+}
+
+nav>header>.topmenu>ul {
+    position: absolute;
+    text-align: center;
+    list-style: none;
+    display: inline-block;
+}
+
+nav .topmenu>ul>li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+nav .topmenu>ul>li>a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+nav .topmenu>ul>li>a:hover {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+}
+
+nav .topmenu ul ul {
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.541);
+}
+
+nav .topmenu ul ul a {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px;
+    display: block;
+}
+
+nav .topmenu ul ul a:hover {
+    box-shadow: 0 0 2px black;
+}
+
+nav .topmenu>ul>li:hover>ul {
+    display: block;
+}
+
+.chu {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+}
+
+aside {
+    width: 15%;
+    height: 300px;
+    float: left;
+    text-align: center;
+}
+
+main {
+    width: 60%;
+    height: 600px;
+    float: left;
+}
+
+article {
+    margin-top: 30px;
+    float: left;
+    width: 25%;
+    height: 500px;
+}
+
+.ban {
+    width: 20%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+.ban:hover {
+    box-shadow: 0 0 5px gray;
+}
+
+.end {
+    width: 20%;
+    height: 35px;
+    margin-bottom: 10px;
+    border: none;
+    outline: none;
+    color: gray;
+    font-weight: bold;
+    font-size: 14px;
+    background-color: rgba(128, 128, 128, 0.637);
+}
+
+.column {
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+
+.banthich {
+    color: gray;
+    font-size: 18px;
+    text-align: left;
+}
+
+.title {
+    width: 80px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(55, 182, 55);
+    color: white;
+    font-size: 22px;
+    text-align: right;
+}
+
+.san_pham {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.san_pham .ten {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 24, 24);
+    text-align: left;
+    font-size: 20px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.san_pham>.image {
+    max-width: 75%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.san_pham .giasale {
+    color: rgb(194, 33, 33);
+    font-size: larger;
+    text-align: left;
+    font-size: 18px;
+}
+
+.san_pham>.icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 15px;
+}
+
+.icon>img {
+    width: 15px;
+    height: 15px;
+}
+
+.san_pham .icon>i {
+    font-size: 15px;
+    color: rgb(245, 141, 141);
+}
+
+.san_pham .icon>i:hover {
+    color: red;
+}
+
+.san_pham>.new-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.new-icon>img {
+    width: 50px;
+    height: 50px;
+}
+
+img:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+}
+
+.san_pham:hover {
+    box-shadow: 0 0 5px green;
+}
+
+.datmon {
+    display: none;
+    width: 98%;
+    line-height: 30px;
+    background-color: green;
+    border-radius: 3px;
+    color: white;
+}
+
+.datbanend {
+    display: none;
+    width: 98%;
+    line-height: 30px;
+    background-color: gray;
+    border-radius: 3px;
+    color: white;
+}
+
+.san_pham:hover>.datmon {
+    display: block;
+}
+
+.san_pham:hover>.datbanend {
+    display: block;
+}
+
+.san_pham:hover>.icon {
+    bottom: 35px;
+}
+
+.datmon:hover {
+    box-shadow: inset 0 0 5px rgb(6, 41, 6);
+}
+
+.ifm {
+    width: 100%;
+    height: 500px;
+}
+
+footer {
+    width: 100%;
+    height: 370px;
+}

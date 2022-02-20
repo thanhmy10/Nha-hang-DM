@@ -1,0 +1,364 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+@keyframes example {
+    0% {
+        background-image: url(/image/homemain.jpg);
+    }
+    25% {
+        background-image: url(/image/bartender.png);
+    }
+    50% {
+        background-image: url(/image/banner_bartender.jpg);
+    }
+    100% {
+        background-image: url(/image/banner.jpg);
+    }
+}
+
+@keyframes text {
+    0% {
+        color: red;
+    }
+    50% {
+        color: rgb(255, 255, 255);
+    }
+    100% {
+        color: red;
+    }
+}
+
+header {
+    margin: 0px 15px 5px 15px;
+    background-image: url('/image/homemain.jpg');
+    animation-name: example;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    background-size: 100% 100%;
+    padding-bottom: 30%;
+    font-family: 'Tahoma';
+    position: relative;
+}
+
+header>.call {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    line-height: 40px;
+}
+
+.hot {
+    color: red;
+}
+
+.mocua {
+    color: green;
+    font-weight: bold;
+}
+
+.icon {
+    line-height: 20px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.icon a {
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.icon>a:hover,
+.icon>i:hover {
+    color: rgba(99, 95, 95, 0.849);
+}
+
+.topmenu {
+    width: 100%;
+    top: 35px;
+    line-height: 40px;
+}
+
+.topmenu .logo {
+    position: fixed;
+    text-align: left;
+    top: 15px;
+    left: 40px;
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.topmenu .logo:hover {
+    transform: scale(1.4);
+    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+.topmenu>ul {
+    position: fixed;
+    right: 10px;
+    text-align: right;
+}
+
+.topmenu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.topmenu>ul>li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu>ul>li>a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    margin: 0 15px;
+    font-size: 22px;
+}
+
+.topmenu>ul>li>a:hover {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s linear;
+}
+
+.topmenu ul ul {
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.541);
+}
+
+.topmenu ul ul a {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px;
+    display: block;
+}
+
+.topmenu ul ul a:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.topmenu>ul>li:hover>ul {
+    display: block;
+}
+
+aside {
+    width: 25%;
+    min-height: 500px;
+    float: left;
+}
+
+.right {
+    width: 25%;
+    min-height: 500px;
+    float: right;
+}
+
+article {
+    width: 50%;
+    min-height: 500px;
+    float: left;
+}
+
+main {
+    width: 100%;
+    min-height: 500px;
+    clear: both;
+    text-align: center;
+}
+
+.tieu_de_sale {
+    animation-name: text;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    margin-top: 10px;
+}
+
+.tieu_de_sale:hover {
+    font-size: 27px;
+    color: rgb(231, 17, 28);
+}
+
+.tieu_de {
+    line-height: 50px;
+    text-align: center;
+    font-size: 25px;
+    color: rgb(55, 153, 55);
+    margin-top: 10px;
+}
+
+.tieu_de:hover {
+    font-size: 27px;
+    color: rgb(12, 77, 12);
+}
+
+.column {
+    width: 25%;
+    float: left;
+}
+
+.column img {
+    width: 100%;
+    height: 300px;
+}
+
+.san_pham {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 5px rgb(167, 238, 167);
+    margin-bottom: 20px;
+}
+
+.san_pham:hover {
+    box-shadow: 0 0 5px rgb(28, 58, 28);
+}
+
+.san_pham .ten {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 24, 24);
+    text-align: left;
+    font-size: 20px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.san_pham .gia {
+    color: black;
+    font-size: larger;
+    text-align: right;
+    font-size: 18px;
+    color: green;
+}
+
+.san_pham .giasale {
+    color: rgb(194, 33, 33);
+    font-size: larger;
+    text-align: right;
+    font-size: 18px;
+}
+
+.san_pham .gia del {
+    text-align: left;
+    font-size: 15px;
+    color: gray;
+}
+
+.san_pham .giasale del {
+    text-align: left;
+    font-size: 15px;
+    color: gray;
+}
+
+.sale {
+    width: 100%;
+    text-align: center;
+}
+
+.sale img {
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+}
+
+.sale img:hover {
+    box-shadow: 0 0 10px red;
+}
+
+.anh {
+    width: 100%;
+    text-align: center;
+}
+
+.anh img {
+    margin-top: 10px;
+    width: 700px;
+    text-align: center;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+h1 {
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Brush Script MT';
+    color: rgb(75, 13, 13);
+}
+
+.anh p {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 30px;
+    font-size: 20px;
+    color: rgb(80, 76, 76);
+}
+
+h1:hover {
+    text-shadow: 0 0 5px rgb(44, 40, 40);
+}
+
+footer {
+    width: 100%;
+    height: 370px;
+}
+
+.tim {
+    width: 250px;
+    height: 50px;
+    position: relative;
+}
+
+.tim img {
+    position: absolute;
+    top: 9px;
+    left: 190px;
+    border-radius: 60%;
+}
+
+.timkiem {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px gray;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    color: black;
+    border-radius: 5px;
+}
+
+.timkiem:focus,
+.timkiem:hover {
+    box-shadow: 0 0 5px rgb(82, 11, 11);
+}

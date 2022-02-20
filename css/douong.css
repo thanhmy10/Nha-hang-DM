@@ -1,0 +1,409 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    margin: 0px 15px 5px 15px;
+    background-image: url('/image/homemain.jpg');
+    background-size: 100% 100%;
+    padding-bottom: 30%;
+    font-family: 'Tahoma';
+}
+
+.icon {
+    line-height: 20px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.icon a {
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.icon>a:hover,
+.icon>i:hover {
+    color: rgba(99, 95, 95, 0.849);
+}
+
+.topmenu {
+    width: 100%;
+    top: 35px;
+    line-height: 40px;
+}
+
+.topmenu .logo {
+    position: fixed;
+    text-align: left;
+    top: 15px;
+    left: 40px;
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.topmenu .logo:hover {
+    transform: scale(1.4);
+    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+.topmenu>ul {
+    position: fixed;
+    right: 10px;
+    text-align: right;
+}
+
+.topmenu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.topmenu>ul>li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu>ul>li>a {
+    color: white;
+    text-decoration: none;
+    line-height: 50px;
+    margin: 0 15px;
+    font-size: 22px;
+}
+
+.topmenu>ul>li>a:hover {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: all .5s linear;
+}
+
+.topmenu ul ul {
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.541);
+}
+
+.topmenu ul ul a {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px;
+    display: block;
+}
+
+.topmenu ul ul a:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.topmenu>ul>li:hover>ul {
+    display: block;
+}
+
+aside {
+    float: left;
+    height: 400px;
+    width: 25%;
+    background-color: white;
+}
+
+article {
+    top: 10px;
+    float: right;
+    min-height: 800px;
+    width: 75%;
+}
+
+.column {
+    width: 25%;
+    height: 300px;
+    float: left;
+}
+
+.banthich {
+    color: gray;
+    font-size: 18px;
+    text-align: left;
+}
+
+.title {
+    width: 80px;
+    height: 30px;
+    line-height: 40px;
+    border-radius: 0 5px 5px 0;
+    background-color: rgb(55, 182, 55);
+    color: white;
+    font-size: 22px;
+    text-align: right;
+}
+
+.san_pham {
+    border-radius: 10px;
+    box-shadow: 0 0 5px gray;
+    margin: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+}
+
+.san_pham .ten {
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(29, 24, 24);
+    text-align: left;
+    font-size: 20px;
+    right: 10px;
+    font-weight: bold;
+}
+
+.san_pham>.image {
+    max-width: 70%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.san_pham .giasale {
+    color: rgb(194, 33, 33);
+    font-size: larger;
+    text-align: left;
+    font-size: 18px;
+}
+
+.gia {
+    color: green;
+    font-size: larger;
+    text-align: left;
+    font-size: 18px;
+}
+
+.san_pham .giasale del {
+    text-align: left;
+    font-size: 15px;
+    color: gray;
+}
+
+.san_pham>.icon {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    width: 15px;
+}
+
+.icon>img {
+    width: 15px;
+    height: 15px;
+}
+
+.san_pham .icon>i {
+    font-size: 15px;
+    color: rgb(245, 141, 141);
+}
+
+.san_pham .icon>i:hover {
+    color: red;
+}
+
+.san_pham>.new-icon {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.new-icon>img {
+    width: 50px;
+    height: 50px;
+}
+
+img:hover {
+    overflow: hidden;
+    transform: scale(1.05);
+}
+
+.san_pham:hover {
+    box-shadow: 0 0 5px green;
+}
+
+.datmon {
+    display: none;
+    width: 98%;
+    line-height: 30px;
+    background-color: green;
+    border-radius: 3px;
+}
+
+.san_pham:hover>.datmon {
+    display: block;
+}
+
+.san_pham:hover>.icon {
+    bottom: 35px;
+}
+
+.datmon:hover {
+    box-shadow: inset 0 0 5px rgb(6, 41, 6);
+}
+
+.mucgia {
+    text-align: center;
+    background-color: rgba(25, 85, 25, 0.61);
+    color: rgb(8, 34, 8);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.menumon {
+    text-align: center;
+    background-color: rgba(25, 85, 25, 0.61);
+    color: rgb(8, 34, 8);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 10px;
+    font-family: 'Brush Script MT';
+}
+
+aside>ul {
+    text-align: center;
+    list-style: none;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+aside>ul>li>a {
+    text-decoration: none;
+    color: rgba(14, 54, 6, 0.363);
+}
+
+aside>ul>li>a:hover {
+    color: rgb(7, 59, 7);
+    text-shadow: 0 0 5px rgb(8, 29, 8);
+}
+
+.vmenu {
+    padding: 30px;
+}
+
+.vmenu a {
+    background: url('/image/tronla.jpg') no-repeat 5px center;
+    display: block;
+    background-size: 20px;
+    padding: 5px 0px 5px 20px;
+    text-decoration: none;
+    font-variant: small-caps;
+}
+
+.vmenu a:hover {
+    background: url('/image/tronxanh.jpg') no-repeat 1px center;
+    background-size: 20px;
+    background-color: rgba(52, 133, 52, 0.562);
+}
+
+.menucon {
+    float: left;
+    width: 50%;
+}
+
+.menucon ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menucon>ul>li {
+    text-align: center;
+    position: relative;
+}
+
+.menucon>ul>li>a {
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 0 15px;
+    color: rgb(7, 15, 7);
+    line-height: 30px;
+    background-color: rgba(24, 105, 24, 0.521);
+    position: relative;
+}
+
+.menucon>ul>li>a:hover {
+    color: green;
+}
+
+.menucon ul ul {
+    margin: 0 10px;
+    right: 10px;
+    position: absolute;
+    display: none;
+    width: 100%;
+    list-style: none;
+    background-color: white;
+}
+
+.menucon ul ul a {
+    border-radius: 5px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: rgb(5, 29, 5);
+    width: 100%;
+    line-height: 25px;
+    display: block;
+}
+
+.menucon ul ul a:hover {
+    background-color: rgb(30, 102, 30);
+    color: white;
+}
+
+.menucon>ul>li:hover>ul {
+    display: block;
+}
+
+.tim {
+    width: 250px;
+    height: 50px;
+    position: relative;
+    margin-left: 20px;
+}
+
+.tim img {
+    position: absolute;
+    top: 0px;
+    left: 190px;
+    border-radius: 60%;
+}
+
+.timkiem {
+    border: none;
+    outline: none;
+    box-shadow: 0 0 3px gray;
+    align-items: center;
+    width: 200px;
+    height: 25px;
+    color: black;
+    border-radius: 5px;
+}
+
+.timkiem:focus,
+.timkiem:hover {
+    box-shadow: 0 0 5px rgb(82, 11, 11);
+}

@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    width: 98%;
+    height: 600px;
+    position: relative;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: rgba(0, 0, 0, .65) url('/image/dangnhap.jpg');
+    background-blend-mode: darken;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container>.top nav {
+    background-image: url('/image/1.png');
+    background-repeat: repeat-x;
+    background-size: 110px;
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.top header {
+    background-color: rgba(0, 0, 0, 0.534);
+    background-size: 100% 100%;
+    height: 80px;
+    font-family: 'Tahoma';
+    position: relative;
+}
+
+.top .icon {
+    line-height: 20px;
+    font-size: 15px;
+    text-align: right;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.top .icon a {
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.top .icon>a:hover,
+.icon>i:hover {
+    color: rgba(99, 95, 95, 0.849);
+}
+
+.top .logo>i {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 40px;
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.top .logo>i:hover {
+    transform: scale(1.4);
+    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+.top .topmenu {
+    position: absolute;
+    width: 100%;
+    position: relative;
+    line-height: 40px;
+}
+
+header>.topmenu>ul {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    text-align: center;
+    text-align: right;
+}
+
+.topmenu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.topmenu>ul>li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu>ul>li>a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.topmenu>ul>li>a:hover {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+}
+
+.topmenu ul ul {
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.541);
+}
+
+.topmenu ul ul a {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px;
+    display: block;
+}
+
+.topmenu ul ul a:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.topmenu>ul>li:hover>ul {
+    display: block;
+}
+
+.column {
+    height: auto;
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+.login {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.247);
+    border-radius: 10px;
+    position: relative;
+    padding: 0;
+    line-height: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    color: white;
+}
+
+.column header {
+    margin: 30px 0 10px;
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: rgb(75, 13, 13);
+    font-family: 'Brush Script MT';
+}
+
+h1:hover {
+    text-shadow: 0 0 5px rgb(44, 40, 40);
+}
+
+.column h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 10px rgb(66, 8, 8);
+}
+
+.column h4:hover {
+    text-shadow: 0 0 5px rgb(82, 11, 11);
+}
+
+.group {
+    width: 250px;
+    margin-bottom: 10px;
+    text-align: left;
+    clear: both;
+    line-height: 40px;
+}
+
+textarea {
+    border-radius: 5px;
+}
+
+.control {
+    width: 240px;
+    margin: 5px 0;
+    border-radius: 5px;
+    line-height: 25px;
+    outline: none;
+    border: none;
+}
+
+.control:focus,
+.control:hover,
+textarea:hover {
+    box-shadow: inset 0 0 5px rgb(29, 27, 27);
+}
+
+.group-button {
+    text-align: center;
+}
+
+.button {
+    width: 96%;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    /* box-shadow: 0 0 3px gray; */
+    padding: 5px 5px;
+    outline: none;
+    margin: 5px 3px;
+    color: white;
+    background-color: rgb(94, 18, 18);
+}
+
+.button:focus {
+    color: rgba(43, 7, 7, 0.699);
+}
+
+.button:hover {
+    box-shadow: 0 0 3px rgba(43, 7, 7, 0.699);
+    background-color: rgb(83, 11, 11);
+    color: white;
+}
+
+.submit {
+    line-height: 30px;
+    width: 200px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+    margin: 5px 3px;
+    color: white;
+    background-color: rgb(94, 18, 18);
+}
+
+.submit:focus {
+    color: rgba(43, 7, 7, 0.699);
+}
+
+.submit:hover {
+    box-shadow: 0 0 3px rgba(43, 7, 7, 0.699);
+    background-color: rgb(83, 11, 11);
+    color: white;
+}
+
+.reset {
+    line-height: 30px;
+    font-size: 16px;
+    color: gray;
+}
+
+.reset:hover {
+    background-color: gray;
+    color: white;
+}

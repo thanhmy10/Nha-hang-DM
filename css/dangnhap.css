@@ -1,0 +1,304 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 900px;
+    position: relative;
+    background: rgba(0, 0, 0, .65) url('/image/dangnhap.jpg');
+    background-blend-mode: darken;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.container>.top nav {
+    background-image: url('/image/1.png');
+    background-repeat: repeat-x;
+    background-size: 110px;
+    height: 25px;
+    width: 100%;
+    position: relative;
+}
+
+.top header {
+    background-color: rgba(0, 0, 0, 0.534);
+    background-size: 100% 100%;
+    height: 80px;
+    font-family: 'Tahoma';
+    position: relative;
+}
+
+.top .icon {
+    line-height: 20px;
+    font-size: 15px;
+    text-align: right;
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.678);
+}
+
+.top .icon a {
+    line-height: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.top .icon>a:hover,
+.icon>i:hover {
+    color: rgba(99, 95, 95, 0.849);
+}
+
+.top .logo>i {
+    position: absolute;
+    text-align: center;
+    top: 15px;
+    left: 40px;
+    font-size: 50px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.top .logo>i:hover {
+    transform: scale(1.4);
+    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+.top .topmenu {
+    position: absolute;
+    width: 100%;
+    position: relative;
+    line-height: 40px;
+}
+
+header>.topmenu>ul {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    text-align: center;
+    text-align: right;
+}
+
+.topmenu ul {
+    list-style: none;
+    display: inline-block;
+}
+
+.topmenu>ul>li {
+    text-align: center;
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu>ul>li>a {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: none;
+    line-height: 20px;
+    margin: 0 15px;
+    font-size: 20px;
+}
+
+.topmenu>ul>li>a:hover {
+    color: rgb(92, 91, 91);
+    text-decoration: none;
+}
+
+.topmenu ul ul {
+    width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(128, 128, 128, 0.541);
+}
+
+.topmenu ul ul a {
+    line-height: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 0 10px;
+    display: block;
+}
+
+.topmenu ul ul a:hover {
+    box-shadow: 0 0 2px black;
+}
+
+.topmenu>ul>li:hover>ul {
+    display: block;
+}
+
+.container {
+    background: rgba(0, 0, 0, .65) url('/image/dangnhap.jpg');
+    background-blend-mode: darken;
+}
+
+.column {
+    height: auto;
+    width: 350px;
+    position: absolute;
+    text-align: center;
+    position: relative;
+    margin: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 98%;
+    height: 600px;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    width: 300px;
+    height: auto;
+    background-color: rgba(128, 128, 128, 0.247);
+    border-radius: 10px;
+    position: relative;
+    padding: 0;
+    line-height: 30px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.column header {
+    margin: 30px 0 10px;
+}
+
+h4 {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 10px rgb(66, 8, 8);
+}
+
+h4:hover {
+    text-shadow: 0 0 5px rgb(82, 11, 11);
+}
+
+.group {
+    border-bottom: 1px solid gray;
+    width: 250px;
+    margin: 5px 10px;
+    text-align: left;
+    clear: both;
+    line-height: 40px;
+}
+
+.group-remember {
+    margin: 5px 0 5px 5px;
+    text-align: left;
+    width: auto;
+    clear: both;
+    font-size: 12px;
+    line-height: 40px;
+    float: left;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.group-remember a {
+    margin-left: 80px;
+    font-size: 12px;
+    line-height: 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.group-remember a:hover {
+    color: gray;
+}
+
+.group>label {
+    color: rgb(90, 25, 25);
+    font-weight: 100;
+}
+
+.tendangnhap,
+.pass {
+    background-color: rgba(255, 255, 255, 0);
+    float: left;
+    margin-top: 10px;
+    line-height: 30px;
+    border: none;
+    width: 150px;
+    color: white;
+    display: block;
+    outline: none;
+}
+
+.group i {
+    font-size: 20px;
+    margin-right: 10px;
+    color: white;
+    display: inline;
+    float: left;
+    margin-top: 15px;
+}
+
+.group-button {
+    text-align: center;
+}
+
+.button {
+    width: 96%;
+    font-weight: bolder;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 5px;
+    outline: none;
+    margin: 5px 3px;
+    color: white;
+    background-color: rgb(94, 18, 18);
+}
+
+.button:focus {
+    color: rgba(43, 7, 7, 0.699);
+}
+
+.button:hover {
+    box-shadow: 0 0 3px rgba(43, 7, 7, 0.699);
+    background-color: rgb(83, 11, 11);
+    color: white;
+}
+
+.or {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bolder;
+    background-color: blue;
+    border-radius: 50%;
+    color: white;
+    margin: auto;
+}
+
+.app {
+    width: 200px;
+    margin: auto;
+}
+
+.app i {
+    color: rgb(73, 73, 236);
+    font-size: 40px;
+    margin: 10px;
+}
