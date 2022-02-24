@@ -8,40 +8,11 @@ body {
     margin: 0 auto;
 }
 
-@keyframes example {
-    0% {
-        background-image: url(/image/homemain.jpg);
-    }
-    25% {
-        background-image: url(/image/bartender.png);
-    }
-    50% {
-        background-image: url(/image/banner_bartender.jpg);
-    }
-    100% {
-        background-image: url(/image/banner.jpg);
-    }
-}
-
-@keyframes text {
-    0% {
-        color: red;
-    }
-    50% {
-        color: rgb(255, 255, 255);
-    }
-    100% {
-        color: red;
-    }
-}
-
 header {
     position: relative;
     margin: 0px 15px 5px 15px;
-    background-image: url('/image/homemain.jpg');
-    animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    background: rgba(0, 0, 0, 0.562) url('../image/backgroundmain.jpg');
+    background-blend-mode: darken;
     background-size: 100% 100%;
     padding-bottom: 30%;
     font-family: 'Tahoma';
@@ -75,7 +46,7 @@ header {
 }
 
 .topmenu .logo {
-    position: fixed;
+    position: absolute;
     text-align: left;
     top: 15px;
     left: 40px;
@@ -91,7 +62,7 @@ header {
 }
 
 .topmenu>ul {
-    position: fixed;
+    position: absolute;
     right: 10px;
     text-align: right;
 }
@@ -165,7 +136,7 @@ article {
 
 .column {
     width: 25%;
-    height: 300px;
+    height: 250px;
     float: left;
 }
 
@@ -176,14 +147,15 @@ article {
 }
 
 .title {
-    width: 80px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
     height: 30px;
-    line-height: 40px;
-    border-radius: 0 5px 5px 0;
+    line-height: 30px;
+    border-radius: 5px;
     background-color: rgb(55, 182, 55);
     color: white;
     font-size: 22px;
-    text-align: right;
 }
 
 .san_pham {
@@ -409,21 +381,16 @@ aside>ul>li>a:hover {
     display: block;
 }
 
-.tim {
-    width: 250px;
-    height: 50px;
-    position: relative;
-    margin-left: 20px;
-}
-
-.tim img {
+.icon img {
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 0px;
-    left: 190px;
-    border-radius: 60%;
+    top: 17px;
+    right: 230px;
 }
 
 .timkiem {
+    background-color: rgba(128, 128, 128, 0.075);
     border: none;
     outline: none;
     box-shadow: 0 0 3px gray;
@@ -436,5 +403,6 @@ aside>ul>li>a:hover {
 
 .timkiem:focus,
 .timkiem:hover {
+    background-color: rgba(128, 128, 128, 0.658);
     box-shadow: 0 0 5px rgb(82, 11, 11);
 }

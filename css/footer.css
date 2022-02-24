@@ -19,7 +19,7 @@ footer {
     font-size: 20px;
     text-align: center;
     width: 100%;
-    background-color: rgba(128, 128, 128, 0.527);
+    background-color: rgba(87, 78, 78, 0.103);
 }
 
 .foot {
@@ -27,7 +27,7 @@ footer {
     width: 33.3%;
     height: 360px;
     float: left;
-    background-color: rgba(128, 128, 128, 0.527);
+    background-color: rgba(66, 62, 62, 0.219);
 }
 
 footer h1 {
@@ -35,7 +35,7 @@ footer h1 {
     text-align: center;
     font-size: 30px;
     font-family: 'Brush Script MT';
-    color: rgb(75, 13, 13);
+    color: rgb(196, 19, 19);
 }
 
 footer .footten:hover {
@@ -52,7 +52,7 @@ footer .footten:hover {
     position: absolute;
     font-size: 50px;
     font-family: 'Brush Script MT';
-    color: rgb(75, 13, 13);
+    color: rgb(196, 19, 19);
     top: 50%;
     left: 50%;
 }

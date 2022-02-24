@@ -7,7 +7,7 @@ body {
     width: 100%;
     height: 900px;
     position: relative;
-    background: rgba(0, 0, 0, .65) url('/image/dangnhap.jpg');
+    background: rgba(0, 0, 0, .65) url('../image/dangnhap.jpg');
     background-blend-mode: darken;
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .container>.top nav {
-    background-image: url('/image/1.png');
+    background-image: url('../image/1.png');
     background-repeat: repeat-x;
     background-size: 110px;
     height: 25px;
@@ -139,7 +139,7 @@ header>.topmenu>ul {
 }
 
 .container {
-    background: rgba(0, 0, 0, .65) url('/image/dangnhap.jpg');
+    background: rgba(0, 0, 0, .65) url('../image/dangnhap.jpg');
     background-blend-mode: darken;
 }
 

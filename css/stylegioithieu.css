@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    background-image: url('/image/homemain.jpg');
+    background-image: url('../image/homemain.jpg');
     background-size: 100% 100%;
     padding-bottom: 30%;
     font-family: 'Tahoma';
@@ -194,10 +194,6 @@ article {
     padding: 1%;
     margin: 0.5%;
     text-align: center;
-}
-
-img:hover {
-    box-shadow: 0 0 10px rgb(116, 109, 109);
 }
 
 h1 {

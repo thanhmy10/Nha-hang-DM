@@ -9,43 +9,31 @@ body {
     position: relative;
 }
 
-@keyframes example {
-    0% {
-        background-image: url(/image/homemain.jpg);
-    }
-    25% {
-        background-image: url(/image/bartender.png);
-    }
-    50% {
-        background-image: url(/image/banner_bartender.jpg);
-    }
-    100% {
-        background-image: url(/image/banner.jpg);
-    }
-}
-
-@keyframes text {
-    0% {
-        color: red;
-    }
-    50% {
-        color: rgb(255, 255, 255);
-    }
-    100% {
-        color: red;
-    }
-}
-
 header {
     margin: 0px 15px 5px 15px;
-    background-image: url('/image/homemain.jpg');
-    animation-name: example;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+    background: rgba(0, 0, 0, 0.562) url('../image/backgroundmain.jpg');
+    background-blend-mode: darken;
     background-size: 100% 100%;
-    padding-bottom: 30%;
+    padding-bottom: 40%;
     font-family: 'Tahoma';
     position: relative;
+}
+
+.logomain {
+    height: 130px;
+    width: 20%;
+    position: relative;
+    top: 250px;
+    left: 37%;
+    text-align: center;
+    color: white;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 80px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
 }
 
 header>.call {
@@ -53,6 +41,10 @@ header>.call {
     top: 60px;
     left: 30px;
     line-height: 40px;
+}
+
+img {
+    border-radius: 3px;
 }
 
 .hot {
@@ -92,7 +84,7 @@ header>.call {
 }
 
 .topmenu .logo {
-    position: fixed;
+    position: absolute;
     text-align: left;
     top: 15px;
     left: 40px;
@@ -103,12 +95,16 @@ header>.call {
 
 .topmenu .logo:hover {
     transform: scale(1.4);
-    color: rgb(196, 19, 19);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
+}
+
+.logomain .logo:hover {
+    transform: scale(1.5);
     text-shadow: 0 0 15px rgb(128, 9, 9);
 }
 
 .topmenu>ul {
-    position: fixed;
+    position: absolute;
     right: 10px;
     text-align: right;
 }
@@ -185,16 +181,14 @@ article {
 }
 
 main {
-    width: 100%;
+    margin: auto;
+    width: 95%;
     min-height: 500px;
     clear: both;
     text-align: center;
 }
 
 .tieu_de_sale {
-    animation-name: text;
-    animation-duration: 0.3s;
-    animation-iteration-count: infinite;
     line-height: 50px;
     text-align: center;
     font-size: 25px;
@@ -231,7 +225,7 @@ main {
 }
 
 .san_pham {
-    margin: 10px;
+    margin: 2px;
     padding: 10px;
     border-radius: 5px;
     text-align: center;
@@ -309,24 +303,28 @@ img:hover {
     transform: scale(1.05);
 }
 
-h1 {
-    line-height: 40px;
-    text-align: center;
-    font-size: 30px;
-    font-family: 'Brush Script MT';
-    color: rgb(75, 13, 13);
-}
-
-.anh p {
+.anh {
     margin-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 30px;
-    font-size: 20px;
+    font-size: 25px;
     color: rgb(80, 76, 76);
 }
 
+.anh .logo {
+    font-size: 50px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Brush Script MT';
+    color: rgb(196, 19, 19);
+}
+
+.logo:hover,
 h1:hover {
-    text-shadow: 0 0 5px rgb(44, 40, 40);
+    text-shadow: 0 0 15px rgb(128, 9, 9);
 }
 
 footer {
@@ -335,19 +333,24 @@ footer {
 }
 
 .tim {
+    position: absolute;
+    top: 20px;
+    left: 50%;
     width: 250px;
     height: 50px;
     position: relative;
 }
 
-.tim img {
+.icon img {
+    width: 20px;
+    height: 20px;
     position: absolute;
-    top: 9px;
-    left: 190px;
-    border-radius: 60%;
+    top: 17px;
+    right: 230px;
 }
 
 .timkiem {
+    background-color: rgba(128, 128, 128, 0.075);
     border: none;
     outline: none;
     box-shadow: 0 0 3px gray;
@@ -360,5 +363,6 @@ footer {
 
 .timkiem:focus,
 .timkiem:hover {
+    background-color: rgba(128, 128, 128, 0.658);
     box-shadow: 0 0 5px rgb(82, 11, 11);
 }
